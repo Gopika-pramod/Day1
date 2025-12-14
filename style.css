@@ -120,7 +120,7 @@ footer {
 .home-page {
     background: 
         /* linear-gradient(rgba(253, 253, 253, 0.85), rgba(164, 189, 115, 0.85)), */
-        url("./images/yellowmarblebg.jpg");
+        url("https://img.freepik.com/premium-photo/white-yellow-marble-with-gold-white-colors_662214-27496.jpg");
 
     background-size: cover;
     background-position: center;
@@ -391,3 +391,4 @@ footer {
         width: 100%;
     }
 }
+
