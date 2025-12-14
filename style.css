@@ -1,0 +1,393 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    /* background-color: #b99c4d;
+    color: #222; */
+     background: 
+        /* linear-gradient(rgba(253, 253, 253, 0.85), rgba(164, 189, 115, 0.85)), */
+        url("https://img.freepik.com/premium-photo/abstract-background-design-hd-calming-yellow-color_851755-82779.jpg?semt=ais_hybrid&w=740&q=80");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+
+.navbar {
+    width: 100%;
+    background: #111;
+    color: #fff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 40px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #000000;
+}
+
+
+footer {
+    background: #111;
+    color: white;
+    padding: 200px 0;
+    text-align: center;
+    margin-top: 400px;
+    font-size: 16px;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    padding: 100px 0;
+}
+
+.home-left {
+    width: 50%;
+}
+
+.home-tagline {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.home-title {
+    font-size: 70px;
+    font-weight: 800;
+    color: #111;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.home-desc {
+    font-size: 20px;
+    color: #222;
+    width: 80%;
+    line-height: 1.6;
+}
+
+.home-right {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.home-right img {
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 4px solid #000;
+    box-shadow: 28px 14px 0px rgba(0, 0, 0, 1);
+}
+
+.home-page {
+    background: 
+        /* linear-gradient(rgba(253, 253, 253, 0.85), rgba(164, 189, 115, 0.85)), */
+        url("./images/yellowmarblebg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+
+/* .about-wrapper {
+    padding-top: 20px;
+}
+
+.about-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.about-name {
+    font-size: 50px;
+    font-weight: bold;
+    color: #1a2a7a; 
+}
+
+.about-details-right {
+    text-align: right;
+    font-size: 15px;
+    color: #444;
+} */
+
+.about-page {
+    width: 85%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+/* Top division */
+.about-top {
+    background: #665a0c;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.about-top h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.about-top p {
+    margin-top: 8px;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* Content grid */
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Cards */
+.about-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.about-card h3 {
+    color: #1a2a7a;
+    margin-bottom: 15px;
+}
+
+.about-card ul {
+    padding-left: 18px;
+}
+
+.about-card li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.info-title {
+    background: #1a2a7a; 
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    width: fit-content;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.info-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+}
+
+.info-content p {
+    margin: 6px 0;
+    font-size: 17px;
+    color: #333;
+}
+
+.page-title {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #1a2a7a;
+    font-weight: bold;
+}
+
+.skills-list {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #222;
+    font-size: 17px;
+}
+
+.skills-list li {
+    margin: 5px 0;
+}
+
+.certificates {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.certificates img {
+    width: 32%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+.certificates img:hover {
+    transform: scale(1.03);
+}
+
+
+.page-subtitle {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 40px;
+}
+
+.project-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    margin-bottom: 35px;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.08);
+}
+
+.project-card h2 {
+    color: #1a2a7a;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.project-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.project-text {
+    width: 60%;
+}
+
+.project-image {
+    width: 15%;
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+.page-subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 40px;
+}
+
+.contact-wrapper {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.contact-info,
+.contact-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    width: 48%;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.contact-info h2,
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #1a2a7a;
+}
+
+.contact-info p {
+    font-size: 17px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.contact-form button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #1a2a7a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #142060;
+}
+
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+}
